@@ -46,7 +46,7 @@ function playRound() {
 
 function rps() {
   alert("Welcome to Rock-Paper-Scissors! Get ready to fight!");
-  while (currentRound < 6) {
+  while (!(computerScore === 3 || playerScore === 3)) {
     playRound();
   }
   if (playerScore === 3) {
@@ -58,3 +58,4 @@ function rps() {
 }
 
 // ((computerScore != 3 || playerScore != 3) && !(computerScore != 3 && playerScore != 3))
+rps()
